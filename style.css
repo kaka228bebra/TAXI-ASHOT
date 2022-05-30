@@ -1,0 +1,114 @@
+body{
+    background-color: tan;
+padding: 90px;
+}
+
+h1{
+    margin: auto;
+}
+
+div{
+    margin-top: 2px;
+    text-align: center;
+}
+
+#container{
+    background-color: rgb(255, 0, 0);
+    width: auto;
+}
+
+.navi{
+   background-color: blueviolet;
+   position: relative;
+   display: block;
+   width: 100%;
+   height: auto;
+   z-index: 5;
+}
+.navi ul{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    list-style: none;
+}
+
+.navi > ul::after{
+    display: block;
+    width: 100%;
+    height: 0px;
+    clear: both;
+    content: "";
+}
+
+.navi ul li{
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    height: auto ;
+}
+
+.navi ul li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    height: 40px;
+    border: slategray;
+    color: rgb(55, 125, 125);
+    background: #111;
+}
+
+.navi ul li ul{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    width: 200px;
+    border: salmon;
+    color: blue;
+    background-color: aqua;
+}
+
+.navi ul li :hover ul{
+    display: block;
+}
+
+.navi ul li ul li{
+    float: none;
+    width: 100%;
+}
+
+.navi ul li ul li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    height: 40px;
+    border: slategray;
+    color: rgb(55, 125, 125);
+    background: #111; 
+}
+
+.carusel{
+    margin: 10px;
+    display: flex;
+}
+.carusel div{
+    flex: 70%;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+}
+.carusel div img{
+
+    height: 670px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 7px 9px 16px 0px #000;
+    justify-content: center;
+}
+h1{
+    font-family: 'Russo One', sans-serif;
+}
